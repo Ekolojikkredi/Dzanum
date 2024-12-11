@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi Sistemi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>♻️ EKOLOJİK KREDİ</span>
+        </div>
+        <div class="title">
+            <h1>Ekolojik Kredi Sistemi</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button class="menu-btn" data-target="#home">Ana Sayfa</button></li>
+            <li><button class="menu-btn" data-target="#nedir">Nedir?</button></li>
+            <li><button class="menu-btn" data-target="#hazirlayanlar">Hazırlayanlar</button></li>
+            <li><button class="menu-btn" data-target="#ekolojik-kredi">Ekolojik Kredi</button></li>
+            <li><button class="menu-btn" data-target="#bize-ulasin">Bize Ulaşın</button></li>
+            <li><button class="menu-btn" data-target="#geri-donusum">Geri Dönüşüm Nedir?</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="content-section">
+            <h2>Hoşgeldiniz!</h2>
+            <p>Ekolojik Kredi Sistemi ile çevre dostu uygulamalarla kredi kazanın!</p>
+        </section>
+
+        <section id="nedir" class="content-section hidden">
+            <h2>Ekolojik Kredi Nedir?</h2>
+            <p>Ekolojik kredi, geri dönüşüm ve atık yönetimi gibi çevre dostu faaliyetler ile kazandığınız puanlardır.</p>
+        </section>
+
+        <section id="hazirlayanlar" class="content-section hidden">
+            <h2>Hazırlayanlar</h2>
+            <p>Danışman Öğretmen: Osman Onuk</p>
+            <p>Öğrenciler: Muhammedcan Arslanparçası, Bilal Yiğit Tezcan, Yağız Efe Yılmaz</p>
+        </section>
+
+        <section id="ekolojik-kredi" class="content-section hidden">
+            <h2>Ekolojik Kredi</h2>
+            <p>Ekolojik kredi kazanmak için çeşitli atıkları geri dönüştürerek puan toplayabilirsiniz.</p>
+        </section>
+
+        <section id="bize-ulasin" class="content-section hidden">
+            <h2>Bize Ulaşın</h2>
+            <p>İzmir Torbalı Anadolu Lisesi</p>
+            <p>Email: <a href="mailto:ekolojikkreditubitak@gmail.com">ekolojikkreditubitak@gmail.com</a></p>
+        </section>
+
+        <section id="geri-donusum" class="content-section hidden">
+            <h2>Geri Dönüşüm Nedir?</h2>
+            <p>Geri dönüşüm, atıkların yeniden kullanılarak çevreye zarar vermeden değer kazanmasını sağlar.</p>
+        </section>
+
+        <!-- Kayıt ve Veri Girişi Bölümü -->
+        <section id="student-register" class="content-section hidden">
+            <h2>Öğrenci Kayıt</h2>
+            <form id="student-register-form">
+                <input type="text" placeholder="Ad Soyad" required>
+                <input type="text" placeholder="Öğrenci Numarası" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telefon Numarası" required>
+                <input type="text" placeholder="Okul Adı" required>
+                <input type="text" placeholder="Sınıf" required>
+                <button type="submit">Kaydı Tamamla</button>
+            </form>
+        </section>
+
+        <section id="school-register" class="content-section hidden">
+            <h2>Okul Kayıt</h2>
+            <form id="school-register-form">
+                <input type="text" placeholder="Okul Adı" required>
+                <input type="text" placeholder="İl" required>
+                <input type="text" placeholder="İlçe" required>
+                <input type="password" placeholder="Okul Şifresi" required>
+                <button type="submit">Kaydı Tamamla</button>
+            </form>
+        </section>
+
+        <section id="waste-entry" class="content-section hidden">
+            <h2>Veri Girişi</h2>
+            <form id="waste-entry-form">
+                <input type="text" placeholder="Öğrenci Adı Soyadı" required>
+                <input type="text" placeholder="Atık Türü" required>
+                <input type="number" placeholder="Atık Miktarı (kg)" required>
+                <button type="submit">Atık Kaydet</button>
+            </form>
+        </section>
+
+        <section id="student-data" class="content-section hidden">
+            <h2>Veri Görüntüle</h2>
+            <div>
+                <p><strong>Toplam Atık:</strong> <span id="totalWaste">0 kg</span></p>
+                <p><strong>Toplam Puan:</strong> <span id="totalPoints">0</span></p>
+                <p><strong>Atık Türleri:</strong> <span id="wasteTypes">Yok</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Torbalı Anadolu Lisesi Coğrafya Proje Ödevi Ekolojik Kredi Örnek Sitesidir</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
